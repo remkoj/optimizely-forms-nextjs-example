@@ -1,0 +1,38 @@
+.EPiServerForms .Form__Title {
+    font-weight: bold;
+    width: 100%;
+}
+
+.EPiServerForms .Form__MainBody {
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.EPiServerForms .FormSubmitButton {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    cursor: pointer;
+    background-color: #eee;
+    border: 1px solid #999;
+    border-radius: 0.25rem;
+}
+.EPiServerForms input {
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+.EPiServerForms .FormTextbox__Input {
+    border: 1px solid #999;
+}
+.EPiServerForms .Form__Element__Caption:after
+{
+    content: ":" !important;
+}
+.EPiServerForms .ValidationRequired .Form__Element__Caption:after
+{
+    content: ": *" !important;
+}
+.EPiServerForms .Form__Element {
+    display: flex;
+    flex-direction: column;
+}
