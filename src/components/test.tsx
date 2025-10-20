@@ -24,7 +24,7 @@ export const Test : FunctionComponent<TestProps> = ({ defaultCmsDomain, defaultF
         </div>
         
         <div className="w-full min-h-8" data-formkey={ formKey } data-locale={ formLocale }>
-            <Form baseUrl={ defaultCmsDomain } formKey={ formKey } language={ formLocale } />
+            <Form formKey={ formKey } language={ formLocale } />
         </div>
     </>
 }

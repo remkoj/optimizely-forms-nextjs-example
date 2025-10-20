@@ -78,7 +78,7 @@ export async function getAnonymousIdentity(): Promise<IdentityInfo> {
 function _base64Encode(input: string): string {
   if (btoa && typeof btoa == "function") return btoa(input);
   if (Buffer && typeof Buffer == "object")
-    //@ts-expect-error
+    //@ts-expect-error We're running Node.js which has the Buffer globally available
     return Buffer.from(input).toString("base64");
 
   throw new Error("Unable to base64Encode");

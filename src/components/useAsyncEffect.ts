@@ -26,7 +26,7 @@ export function useAsyncEffect(effectCallback: AsyncEffectCallback, deps: Depend
             if (typeof cleanup == 'function')
                 cleanup();
         }
-    }, deps)
+    }, [effectCallback, ...deps])
 }
 
 export default useAsyncEffect

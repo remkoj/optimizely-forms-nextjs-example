@@ -12,7 +12,7 @@ import "./form.css"
  * @param props 
  * @returns 
  */
-export const FormLoading: (props: DynamicOptionsLoadingProps) => ReactNode = (props) => {
+export const FormLoading: (props: Pick<DynamicOptionsLoadingProps, 'error'|'isLoading'|'pastDelay'>) => ReactNode = (props) => {
     if (props.error)
         console.error(props.error)
     return <div className="w-full aspect-video bg-gray-200 animate-pulse" />

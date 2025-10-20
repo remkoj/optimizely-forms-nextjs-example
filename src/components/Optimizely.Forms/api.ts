@@ -56,7 +56,9 @@ type OptimizelyFormsProxyOptions = {
 
 /**
  * Create a proxy to prevent a direct connection between Optimizely Headless
- * forms and the browser. This proxy allows to 
+ * forms and the browser. This proxy allows to apply request filtering,  
+ * hides the Optimizely CMS domain and injects authentication to allow anonymous
+ * submissions of forms.
  * 
  * @param     options   
  * @returns 
